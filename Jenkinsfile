@@ -8,6 +8,7 @@ pipeline {
       stage('build') {
         steps {
           echo 'execution du code '
+           echo 'execution du code pour une deuxieme fois '
         }
       }
 
