@@ -1,23 +1,27 @@
 pipeline {
-agent any
-  stages {
-    stage("build") {
-      steps {
-        echo 'execution de l\'application sur la branche main'
-      }
-    }
-    
-     stage("test") {
-      steps {
-        echo 'teste de l\'application sur la branche main'
-      }
-    }
+  
+    agent any
 
-     stage("depoyment") {
-      steps {
-        echo 'deploiement de l\'application sur la branche main'
+
+    stages {
+
+      stage('build') {
+        steps {
+          echo 'execution du code '
+        }
+      }
+
+      stage('test') {
+        steps {
+          echo 'teste du code '
+        }
+      }
+
+       stage('deployment') {
+        steps {
+          echo 'deploiement du code '
+        }
       }
     }
-  }
 }
 
