@@ -9,6 +9,8 @@ pipeline {
         steps {
           echo 'execution du code '
           echo 'execution du code pour une deuxieme fois '
+          echo 'execution du code '
+          echo 'execution du code pour une troisième fois '
          
           
         }
